@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabFragments.AddProductFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:stretchColumns="1">
+
+            <TableRow android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/zdjecieBtn"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:layout_span="2"
+                    android:background="@drawable/button_background"
+                    android:text="@string/zrób_zdjecie"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/name_product"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/name_product"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="#fff"
+                    android:hint="@string/name_product"
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/gram"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/wartosc_na"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/wartosc_na"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#fff"
+                    android:hint="@string/wartosc_na"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:inputType="numberDecimal"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gram"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/wartosc_energetyczna"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/wartosc_energetyczna"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#fff"
+                    android:hint="@string/wartosc_energetyczna"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:inputType="numberDecimal"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/kacl"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/tluszcze"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tluszcze"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#fff"
+                    android:hint="@string/tluszcze"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:inputType="numberDecimal"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gram"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/nasycone"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/nasycone"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#fff"
+                    android:hint="@string/nasycone"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:inputType="numberDecimal"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gram"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/weglowodany"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/weglowodany"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#fff"
+                    android:hint="@string/weglowodany"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:inputType="numberDecimal"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gram"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/cukry"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/cukry"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#fff"
+                    android:hint="@string/cukry"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:inputType="numberDecimal"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gram"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/bialka"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/bialka"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#fff"
+                    android:hint="@string/bialka"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:inputType="numberDecimal"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gram"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/sol"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/sol"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#fff"
+                    android:hint="@string/sol"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:inputType="numberDecimal"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gram"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:background="@drawable/button_background"
+                    android:text="@string/save"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+</FrameLayout>

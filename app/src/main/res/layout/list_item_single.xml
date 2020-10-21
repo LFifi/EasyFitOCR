@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="3dp"
+    android:background="@drawable/radius2"
+    >
+
+    <TextView
+        android:id="@+id/tv_nameMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posiłek"
+        android:textColor="#000000"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nameMeal">
+
+        <TextView
+            android:id="@+id/tv_kcalMeal"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="Kacl"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_bialkoMeal"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="0g"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_tluszczeMeal"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="0g"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_wegleMeal"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="0g"
+            android:textSize="13dp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:contentDescription="TODO"
+        android:src="@drawable/add"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleVievProductRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
